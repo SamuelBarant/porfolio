@@ -1,0 +1,15 @@
+Colores Primarios:
+Fondo Negro: #000000
+Morado: #6A0DAD (puedes ajustar la tonalidad según tus preferencias)
+Blanco: #FFFFFF
+
+Colores Secundarios:
+Morado Claro: #B19CD9 (un tono más claro del morado principal)
+Gris Oscuro: #333333 (puede ser utilizado para variaciones de fondo oscuro)
+Gris Medio: #888888 (para variaciones y elementos de interfaz)
+
+Colores de Fuentes:
+Texto Principal (Blanco sobre fondo negro): #FFFFFF
+Texto Secundario (Gris claro sobre fondo negro): #CCCCCC
+Texto de Resaltado (Morado sobre fondo negro): #6A0DAD
+Texto de Resaltado Claro (Morado claro sobre fondo negro): #B19CD9
