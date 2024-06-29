@@ -13,12 +13,20 @@
 
     --nav-heigth: 16vh;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
     margin: 0;
     background-color: black;
     color: white;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -184,42 +192,47 @@ body > header{
 
 }
 
-header{
+header:first-of-type{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-header > main {
+header:first-of-type > h3 {
+  font-size: 5em;
+  margin: 0;
+}
+
+header:first-of-type > main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 200px;
 }
 
-header > img {
+header:first-of-type > img {
   border-radius: 1%;
   width: 25%;
 }
 
-header > main > div > h1 {
+header:first-of-type > main > div > h1 {
   font-size: 5em;
   margin-bottom: 0;
 }
 
-header > main > div > h2 {
+header:first-of-type > main > div > h2 {
   font-size: 2.5em;
   margin-top: 0;
 }
 
-header > main > div > div {
+header:first-of-type > main > div > div {
   display: flex;
   flex-direction: row;
   margin-bottom: 10%;
 }
 
-header > main > div > div > a {
+header:first-of-type > main > div > div > a {
   color: var(--principal-font);
   width: 10%;
   margin-left: 2%;
@@ -227,17 +240,12 @@ header > main > div > div > a {
   cursor: pointer;
 }
 
-header > main > div > div > a > img {
+header:first-of-type > main > div > div > a > img {
   color: var(--principal-font);
   width: 100%;
   margin-left: 2%;
   margin-right: 2%;
   cursor: pointer;
-}
-
-header > h3 {
-  font-size: 5em;
-  margin: 0;
 }
 
 .contact-btn {
@@ -295,6 +303,85 @@ header > h3 {
   transform: scale(0.95);
 }
 
+header:last-of-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+
+header:last-of-type > h3 {
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+}
+
+
+header:last-of-type > img {
+  border-radius: 1%;
+  width: 100%;
+}
+
+header:last-of-type > main {
+  text-align: center;
+}
+
+header:last-of-type > main > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header:last-of-type > main > div > h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+header:last-of-type > main > div > h2 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+header:last-of-type > main > div > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+header:last-of-type > main > div > div > a {
+  color: var(--principal-font);
+  width: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+header:last-of-type > main > div > div > a > img {
+  color: var(--principal-font);
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+
+@media (min-width: 700px){
+  header:last-of-type{
+    display: none;
+  }
+
+}
+
+@media (max-width: 700px){
+  header:first-of-type{
+    display: none;
+  }
+
+}
 
 /*main*/
 body > main{
