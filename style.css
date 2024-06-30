@@ -188,9 +188,8 @@ nav > ul:last-of-type > li {
 
 /*header*/
 body > header{
-    height: 100vh;
+    height: auto;
     width: 100%;
-
 }
 
 header:first-of-type{
@@ -390,7 +389,11 @@ body > main{
 
 }
 
-main > .about_me > article{
+.about_me {
+  margin-top: 10%;
+}
+
+.about_me > article{
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -514,6 +517,13 @@ main > .about_me > article{
   .skill-container2 {
     width: 59vi;
     height: 69vh;
+  }
+}
+
+@media (max-width: 768px){
+  @keyframes span_skill {
+    0%{transform: translateY(-30px); opacity: 0%;}
+    100%{transform: translateY(30px); opacity: 100%;}
   }
 }
 
