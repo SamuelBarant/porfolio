@@ -52,6 +52,7 @@ body > nav{
     flex-wrap: wrap;
     position: fixed;
     margin: 0;
+    z-index: 999;
 }
 
 nav > img {
@@ -224,6 +225,7 @@ header:first-of-type > main > div > h1 {
 header:first-of-type > main > div > h2 {
   font-size: 2.5em;
   margin-top: 0;
+  margin-bottom: 10%;
 }
 
 header:first-of-type > main > div > div {
@@ -311,7 +313,6 @@ header:last-of-type {
   margin-top: 20%;
 }
 
-
 header:last-of-type > h3 {
   font-size: 5em;
   margin: 0;
@@ -368,7 +369,6 @@ header:last-of-type > main > div > div > a > img {
   cursor: pointer;
 }
 
-
 @media (min-width: 700px){
   header:last-of-type{
     display: none;
@@ -385,9 +385,149 @@ header:last-of-type > main > div > div > a > img {
 
 /*main*/
 body > main{
-    height: 100vh;
+    height: auto;
     width: 100%;
 
+}
+
+main > .about_me > article{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_me > article > h3 {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 3%;
+}
+
+.about_me > article > p {
+  font-size: 1.2em;
+  width: 80vi;
+}
+
+.skills {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.skills > article > h3 {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 3%;
+}
+
+.skills > article > p {
+  font-size: 1.2em;
+  width: 80vi;
+}
+
+.skills > article > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.skills > article > div > div {
+  margin: 5%;
+}
+
+.skill-container {
+  width: 24vi;
+  height: 70vh;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-container2 {
+  width: 23vi;
+  height: 69vh;
+  background-color: var(--background-color);
+  transition: all 0.2s;
+  border-radius: 20px;
+}
+
+.skill-container2 > h4 {
+  font-size: 2em;
+  margin-top: 5%;
+}
+
+.skill-container2 > .skills-item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20%;
+  place-items: center;
+}
+
+.skill-container2 > .skills-item > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 110px;
+  margin-top: 20%;
+  overflow: visible;
+}
+
+.skill-container2 > .skills-item > div > img {
+  width: 40%;
+}
+
+.skill-container2 > .skills-item > div > span {
+  position: absolute;
+  margin-top: 10%;
+  font-size: 1.6em;
+  display: none;
+  cursor: default;
+}
+.skill-container2 > .skills-item > div:hover > span {
+  display: block;
+  animation: span_skill 2s ease-in-out forwards;
+}
+
+@keyframes span_skill {
+  0%{transform: translateY(-20px); opacity: 0%;}
+  100%{transform: translateY(50px); opacity: 100%;}
+}
+
+@media (max-width: 1024px){
+  .skills > article > div {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .skill-container {
+    width: 60vi;
+    height: 70vh;
+  }
+  
+  .skill-container2 {
+    width: 59vi;
+    height: 69vh;
+  }
+}
+
+@media (max-width: 425px){
+  .skill-container {
+    height: 43vh;
+  }
+
+  .skill-container2 {
+    height: 42vh;
+  }
+}
+
+@media (max-width: 375px){
 }
 
 /*footer*/
