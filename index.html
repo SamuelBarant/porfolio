@@ -12,10 +12,10 @@
         <nav>
             <img src="/resource/iconos/95043338.ico" alt="icono porfolio">
             <ul>
-                <li><h2>About me</h2></li>
-                <li><h2>Skills</h2></li>
-                <li><h2>Jobs</h2></li>
-                <li><h2>Contact me</h2></li>
+                <li><a href="#about_me"><h2>About me</h2></a></li>
+                <li><a href="#skills"><h2>Skills</h2></a></li>
+                <li><a href="#jobs"><h2>Jobs</h2></a></li>
+                <li><a href="#contactme"><h2>Contact me</h2></a></li>
             </ul>
             <label class="burger" for="burger">
                 <span></span>
@@ -24,10 +24,10 @@
             </label>
             <input type="checkbox" id="burger" class="menu_burger">
             <ul>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Jobs</li>
-                <li>Contact me</li>
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#contactme">Contact me</a></li>
             </ul>
         </nav>
         <header>
@@ -93,13 +93,13 @@
             </main>
         </header>
         <main>
-          <section class="about_me">
+          <section id="about_me" class="about_me">
               <article>
                 <h3>About me</h3>
                 <p>Hello! I'm Samuel Barba Anton, a programming enthusiast with a passion for continuous learning. My love for technology and computer science drives me to constantly explore new technologies and enhance my skills. I enjoy tackling new challenges and finding innovative solutions to complex problems. I'm always looking for opportunities to grow both professionally and personally in the world of programming.</p>
               </article>
           </section>
-          <section class="skills">
+          <section id="skills" class="skills">
             <article>
               <h3>Skills</h3>
               <div>
@@ -163,7 +163,7 @@
               </div>                                            
             </article>
           </section>
-          <section class="jobs">
+          <section id="jobs" class="jobs">
             <article>
               <h3>Jobs</h3>
               <div class="jobs-container">
@@ -185,7 +185,48 @@
               </div>
             </article>
           </section>
+          <section id="contactme" class="contactme">
+            <article>
+              <div class="form-card1">
+                <div class="form-card2">
+                  <form class="form" action="https://formspree.io/f/xoqoqbdj" method="post">
+                    <p class="form-heading">Contact me</p>
+              
+                    <div class="form-field">
+                      <input type="text" name="name" required="" placeholder="Name" class="input-field" type="text" />
+                    </div>
+              
+                    <div class="form-field">
+                      <input
+                        type="email"
+                        name="email"
+                        required=""
+                        placeholder="Email"
+                        class="input-field"
+                        type="email"
+                      />
+                    </div>
+              
+                    <div class="form-field">
+                      <textarea
+                        name="message"
+                        required=""
+                        placeholder="Message"
+                        cols="30"
+                        rows="3"
+                        class="input-field"
+                      ></textarea>
+                    </div>
+              
+                    <button type="submit" class="sendMessage-btn">Send Message</button>
+                  </form>
+                </div>
+              </div>
+              
+              </div>
+              
+            </article>
+          </section>
         </main>
-        <footer></footer>
-    </body>
+      </body>
 </html>
