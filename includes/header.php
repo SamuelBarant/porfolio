@@ -5,7 +5,7 @@
             <h1>Samuel</h1>
             <h2>Barba Antón</h2>
             <div>
-                <a href="https://github.com/Samucraft346" target="_blank"><img src="../assets/skills/github.svg" alt="github"></a>
+                <a href="https://github.com/SamuelBarant" target="_blank"><img src="../assets/skills/github.svg" alt="github"></a>
                 <a href="https://www.linkedin.com/in/samuel-barba-217210275" target="_blank"><img src="../assets/skills/linkedin.svg" alt="linkedin"></a>
                 <a href="../assets/uploads/CV_Samuel_Barba.pdf" download="CV_Samuel_Barba.pdf"><img src="../assets/skills/cv.svg" alt="cv"></a>
             </div>
@@ -38,7 +38,7 @@
             <h1>Samuel</h1>
             <h2>Barba Antón</h2>
             <div>
-                <a href="https://github.com/Samucraft346" target="_blank"><img src="../assets/skills/github.svg" alt="github"></a>
+                <a href="https://github.com/SamuelBarant" target="_blank"><img src="../assets/skills/github.svg" alt="github"></a>
                 <a href="https://www.linkedin.com/in/samuel-barba-217210275" target="_blank"><img src="../assets/skills/linkedin.svg" alt="linkedin"></a>
                 <a href="../assets/uploads/CV_Samuel_Barba.pdf" download="CV_Samuel_Barba.pdf"><img src="../assets/skills/cv.svg" alt="cv"></a>
             </div>
