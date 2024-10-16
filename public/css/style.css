@@ -267,6 +267,10 @@ header:first-of-type > main > div > div > a > img {
   cursor: pointer;
 }
 
+header > main > div > a {
+  text-decoration: none;
+}
+
 .contact-btn {
   background: #a370f0;
   color: white;
