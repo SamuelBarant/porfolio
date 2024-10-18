@@ -528,39 +528,7 @@ body > main{
   100%{transform: translateY(50px); opacity: 100%;}
 }
 
-@media (max-width: 1024px){
-  .skills > article > div {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-  .skill-container {
-    width: 60vi;
-    height: 70vh;
-  }
-  
-  .skill-container2 {
-    width: 59vi;
-    height: 69vh;
-  }
-}
 
-@media (max-width: 768px){
-  @keyframes span_skill {
-    0%{transform: translateY(-30px); opacity: 0%;}
-    100%{transform: translateY(30px); opacity: 100%;}
-  }
-}
-
-@media (max-width: 425px){
-  .skill-container {
-    height: 43vh;
-  }
-
-  .skill-container2 {
-    height: 42vh;
-  }
-}
 
 .jobs {
   margin-top: var(--mainsubarticle-margin-top);
@@ -842,6 +810,7 @@ body > main{
   padding-bottom: 0.4em;
   background-color: #171717;
   border-radius: 20px;
+  color: white;
 }
 
 .form-heading {
@@ -874,6 +843,8 @@ body > main{
   width: 100%;
   color: var(--secundary-font);
   padding-inline: 1em;
+  color: white;
+
 }
 
 .sendMessage-btn {
@@ -916,4 +887,41 @@ body > main{
 .form-card2:hover {
   transform: scale(0.98);
   border-radius: 20px;
+}
+
+@media (max-width: 1024px){
+  .skills > article > div {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .skill-container {
+    width: 60vi;
+    height: 70vh;
+  }
+  
+  .skill-container2 {
+    width: 59vi;
+    height: 69vh;
+  }
+}
+
+@media (max-width: 768px){
+  @keyframes span_skill {
+    0%{transform: translateY(-30px); opacity: 0%;}
+    100%{transform: translateY(30px); opacity: 100%;}
+  }
+  .job-item-button{
+    display: block;
+  }
+}
+
+@media (max-width: 425px){
+  .skill-container {
+    height: 43vh;
+  }
+
+  .skill-container2 {
+    height: 42vh;
+  }
 }
